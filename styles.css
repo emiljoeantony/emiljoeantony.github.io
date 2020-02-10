@@ -14,6 +14,7 @@ body {
   background-size: cover;
   background-color: black;
 }
+
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -244,11 +245,35 @@ body {
 /*mobile screens*/
 
 @media only screen and (max-width: 680px) {
+ 
 }
 @media only screen and (min-width: 680px) {
+ 
 }
 /*tablet and pc*/
 @media only screen and (min-width: 992px) {
+  .naviDots{
+    position: sticky;
+    top: 450px;
+    float: left;
+    margin-right: 2px;
+  }
+  .naviDots li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .naviDots a{
+    float: right;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    
+    
+  }
+  .naviDots a:hover{
+    color: tomato;
+  }
   .topNavigation {
     display: flex;
     flex-direction: row;
