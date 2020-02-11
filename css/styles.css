@@ -10,6 +10,7 @@ html{
   overflow-y: scroll;
   scrollbar-color:  tomato black;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 
 }
 /* Style inside the body */
