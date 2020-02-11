@@ -240,39 +240,43 @@ body {
 .botnav a:hover {
   color: tomato;
 }
+.naviDots{
+    display: none;
+  } 
 /* styles for the bottom navigation icon ends here*/
 
 /*mobile screens*/
 
 @media only screen and (max-width: 680px) {
- 
+  
 }
 @media only screen and (min-width: 680px) {
- 
+  
 }
 /*tablet and pc*/
 @media only screen and (min-width: 992px) {
-  .naviDots{
+  .naviDots {
+    display: block;
     position: sticky;
     top: 450px;
-    float: left;
-    margin-right: 2px;
+    float: right;
+    margin-right: 15px;
   }
-  .naviDots li{
+  .naviDots li {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  
-  .naviDots a{
-    float: right;
+
+  .naviDots a {
+    
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
-    
-    
+    opacity: 0.5;
   }
-  .naviDots a:hover{
+  .naviDots a:hover {
     color: tomato;
+    opacity: 1;
   }
   .topNavigation {
     display: flex;
@@ -285,11 +289,11 @@ body {
     font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   }
   /*property is used for positioning and formatting content*/
-   .column {
-    float: left; 
+  .column {
+    float: left;
     width: 33.3%;
     padding: 5px;
-  } 
+  }
   .row.gallerySplit {
     flex-direction: row;
   }
@@ -303,15 +307,15 @@ body {
     padding: 60px;
     width: 100vw;
   }
-  .about{
+  .about {
     padding: 60px;
     padding-top: 20px;
   }
-  .works{
+  .works {
     padding: 60px;
     padding-top: 20px;
   }
-  .contact{
+  .contact {
     padding: 60px;
     padding-top: 20px;
   }
@@ -327,10 +331,10 @@ body {
     letter-spacing: 2px;
     text-align: left;
   }
-  .about p{
+  .about p {
     font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
   }
-  .contact p{
+  .contact p {
     font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
   }
 }
