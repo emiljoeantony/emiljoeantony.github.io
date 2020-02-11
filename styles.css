@@ -6,9 +6,9 @@
   background-color: tomato;
   border-radius: 25px;
 }
-scrollMozilla{
+html{
   overflow-y: scroll;
-  scrollbar-color: black tomato;
+  scrollbar-color:  tomato black;
   scrollbar-width: thin;
 
 }
