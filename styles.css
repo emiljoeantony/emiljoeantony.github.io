@@ -6,6 +6,12 @@
   background-color: tomato;
   border-radius: 25px;
 }
+scrollMozilla{
+  overflow-y: scroll;
+  scrollbar-color: black tomato;
+  scrollbar-width: thin;
+
+}
 /* Style inside the body */
 body {
   width: 100%;
