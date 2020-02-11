@@ -257,8 +257,15 @@ body {
 @media only screen and (min-width: 992px) {
   .naviDots {
     display: block;
-    position: sticky;
-    top: 450px;
+    /* position: sticky;
+    position: -webkit-sticky; */
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     float: right;
     margin-right: 15px;
   }
