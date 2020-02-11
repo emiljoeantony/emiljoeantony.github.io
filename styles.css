@@ -274,14 +274,15 @@ body {
     justify-content: center;
     float: right;
     margin-right: 15px;
+    
   }
   .naviDots li {
     margin-top: 10px;
     margin-bottom: 10px;
+    list-style: none;
   }
 
-  .naviDots a {
-    
+  .naviDots a {  
     color: white;
     font-size: 15px;
     text-decoration: none;
@@ -291,6 +292,10 @@ body {
     color: tomato;
     opacity: 1;
   }
+ 
+  
+
+  
   .topNavigation {
     display: flex;
     flex-direction: row;
