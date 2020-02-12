@@ -27,6 +27,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+/* Style for home page */
 .home-page {
   display: flex;
   flex-direction: column;
@@ -62,7 +63,7 @@ body {
   justify-content: center;
   margin-top: 50px;
 }
-/* Style the links inside the navigation bar */
+/* Style for hyperlinks inside the navigation bar */
 .top-navigation-bar a {
   color: #f2f2f2;
   text-align: center;
@@ -73,12 +74,12 @@ body {
   font-size: calc(40px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Century Gothic', sans-serif;
 }
-/* Change the color of links on hover */
+/* Change the color of hyperlinks on hover */
 .top-navigation-bar a:hover {
   background-color: tomato;
   color: black;
 }
-/* Add a color to the active/current link */
+/* Add a color to the active/current hyperlink */
 .top-navigation-bar a.active {
   font: color black;
 }
@@ -107,7 +108,7 @@ body {
   font-family: 'Century Gothic', sans-serif;
 }
 /*style of the lines dividing the pages*/
-.page-divider-line{
+.page-divider-line {
   background-color: tomato;
   width: 99%;
   height: 2px;
@@ -124,8 +125,7 @@ body {
 .custom-row-container {
   display: flex;
 }
-/*styles inside the gallery/images column*/
-
+/*styles inside the gallery/images to change to grayscale*/
 .saturate {
   filter: grayscale(100%);
 }
@@ -274,10 +274,10 @@ body {
 }
 /* styles for the bottom navigation icon ends here*/
 /*mobile screens*/
-@media only screen and (max-width: 680px) {
+/* @media only screen and (max-width: 680px) {
 }
 @media only screen and (min-width: 680px) {
-}
+} */
 /*tablet and pc*/
 @media only screen and (min-width: 992px) {
   .side-navigation-bar {
@@ -368,7 +368,7 @@ body {
     font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
   }
 }
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
 }
 @media only screen and (min-width: 1600px) {
-}
+} */
