@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--instruction to the web bcustom-row-containerser about what version of HTML the page is written in-->
 <html>
 <head>
   <!--custom style sheet-->
@@ -18,7 +18,7 @@
 </head>
 <body>
   <!--used for page navigation slider on the right side of the page-->
-  <div class="naviDots">
+  <div class="side-navigation-bar">
     <ul>
       <li><a href="#home" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
       <li><a href="#Work" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
@@ -27,19 +27,19 @@
     </ul>
   </div>
   <!--home section starts here, with a class name flex-->
-  <div id="home" class="flex">
-    <!--class topNavigation for the navigation menu on top of the website-->
-    <div class="topNavigation">
+  <div id="home" class="custom-flex-container">
+    <!--class top-navigation-bar for the navigation menu on top of the website-->
+    <div class="top-navigation-bar">
       <a class="active" href="#home">Home</a>
       <a href="#Work">Works</a>
       <a href="#About">About</a>
       <a href="#Contact">Contact</a>
     </div>
-    <!--class box contains the profile picture with the class name box-image and herotext-->
-    <div class="box">
+    <!--class home-page contains the profile picture with the class name home-page-image and herotext-->
+    <div class="home-page">
       <div>
         <div>
-          <img src="images/mi.jpg" alt="profilepicture" class="box-img" />
+          <img src="images/mi.jpg" alt="profilepicture" class="hero-image" />
         </div>
         <div>
           <h1 class="heroText"> Bring your brand to life with my help...</h1>
@@ -52,73 +52,73 @@
     <!--home section ends here-->
     <!--works section starts here, with a class name of works and an id name of work-->
     <div id="Work" class="works">
-      <!--this class row contains the title and the dividing line-->
-      <div class="row workHead">
-        <div class="column">
+      <!--this class custom-row-container contains the title and the dividing line-->
+      <div class="custom-row-container workHead">
+        <div class="custom-column-container">
           <h2>Works</h2>
         </div>
-        <div class="column">
-          <div class="line"></div>
+        <div class="custom-column-container">
+          <div class="page-divider-line"></div>
         </div>
       </div>
 
-      <!--this class row contains the the first row of images-->
-      <div class="row gallerySplit">
-        <div class="column">
+      <!--this class custom-row-container contains the the first custom-row-container of images-->
+      <div class="custom-row-container gallerySplit">
+        <div class="custom-column-container">
           <img src="images/mita.jpg" alt="exterior" style="width:100%" class="saturate">
           <!--class overlay is used to display the title of the image when hovered upon the image-->
           <div class="overlay">Mita Residence</div>
         </div>
-        <div class="column">
+        <div class="custom-column-container">
           <img src="images/anu.jpg" alt="interior" style="width:100%" class="saturate">
           <div class="overlay">Anuradha Residence</div>
         </div>
-        <div class="column">
+        <div class="custom-column-container">
           <img src="images/jacuzzi2.jpg" alt="interior" style="width:100%" class="saturate">
           <div class="overlay">Sam Residence</div>
         </div>
       </div>
-      <!--first row of images ends here-->
-      <!--this class row contains the  second row of images-->
-      <div class="row gallerySplit">
-        <div class="column">
+      <!--first custom-row-container of images ends here-->
+      <!--this class custom-row-container contains the  second custom-row-container of images-->
+      <div class="custom-row-container gallerySplit">
+        <div class="custom-column-container">
           <img src="images/jacuzzi1.jpg" alt="interior" style="width:100%" class="saturate">
           <div class="overlay">Sam Residence</div>
         </div>
-        <div class="column">
+        <div class="custom-column-container">
           <img src="images/Home theatre 2.jpg" alt="interior" style="width:100%" class="saturate">
           <div class="overlay">Sam Residence</div>
         </div>
-        <div class="column">
+        <div class="custom-column-container">
           <img src="images/Master BR toilet view 1.jpg" alt="interior" style="width:100%" class="saturate">
           <div class="overlay">Sam Residence</div>
         </div>
       </div>
-      <!--second row of images ends here-->
+      <!--second custom-row-container of images ends here-->
     </div>
 
 
     <!--About section starts here-->
     <div id="About" class="about">
-      <!--this class row contains the title and the dividing line-->
-      <div class="row aboutHead">
-        <div class="column">
+      <!--this class custom-row-container contains the title and the dividing line-->
+      <div class="custom-row-container aboutHead">
+        <div class="custom-column-container">
           <h2>About</h2>
         </div>
-        <div class="column">
-          <div class="line"></div>
+        <div class="custom-column-container">
+          <div class="page-divider-line"></div>
         </div>
       </div>
-      <!--class row containing the title and the dividing line ends here-->
+      <!--class custom-row-container containing the title and the dividing line ends here-->
       <p>I'm Emil Joe Antony, a 26y/o developer freshly graduated from the web development department of Makers.studio.
         As a developer, I try to trigger emotions through digital interfaces using code. I also like Photography, Music
         and Gaming...
       </p>
       <!--timeline starts here-->
       <div class="timeline">
-        <div class="row timelineSplit">
-          <!--separate id given inorder to give a margin for timeline entry-->
-          <div id="t1" class="column">
+        <div class="custom-row-container timelineSplit">
+          <!--separate id given inorder to give a margin-timeline-1in for timeline entry-->
+          <div id="timeline-divider" class="custom-column-container">
             <h2>2020</h2>
             <p>Started working as a product developer in Makers.Studio.</p>
             <div id="drop">
@@ -127,14 +127,14 @@
             </div>
 
           </div>
-          <div class="column">
-            <div id="marg">
+          <div class="custom-column-container">
+            <div id="margin-timeline-1">
               <h2>2014</h2>
               <p>
                 Started working as a 3D Generalist in DesignQube.
               </p>
             </div>
-            <div id="marg2">
+            <div id="margin-timeline-2">
               <h2>2011</h2>
               <p>
                 Started Diploma in Multimedia And Animation at School Of Multimedia And Animation,Thrissur.
@@ -146,27 +146,26 @@
     </div>
     <!--contact section starts here-->
     <div id="Contact" class="contact">
-      <!--this class row contains the title and the dividing line-->
-      <div class="row contactHead">
-        <div class="column">
+      <!--this class custom-row-container contains the title and the dividing line-->
+      <div class="custom-row-container contactHead">
+        <div class="custom-column-container">
           <h2>Contact</h2>
         </div>
-        <div class="column">
-          <div class="line"></div>
+        <div class="custom-column-container">
+          <div class="page-divider-line"></div>
         </div>
-        <!--class row containing the title and the dividing line ends here-->
+        <!--class custom-row-container containing the title and the dividing line ends here-->
       </div>
       <p>
         Do you have a project or an idea in your mind that you want to
         develop and need help?? Discover my projects on my social networks and
         feel free to contact me!!
       </p>
-      <!--this row consists the contact form-->
-      <div class="row contactSplit">
-        <div class="column"><iframe title="GoogleForm" id="form"
-            src="https://docs.google.com/forms/d/e/1FAIpQLScDiQerROLDOx3IQC2W2BwPltZfP4NlwBFMR0ycFdfnX7HhvA/viewform?embedded=true"
-            width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-          <!--imported contact form from google forms-->
+      <!--this custom-row-container consists the contact google-form-->
+      <div class="custom-row-container contactSplit">
+        <div class="custom-column-container"><iframe title="google-form" id="google-form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScDiQerROLDOx3IQC2W2BwPltZfP4NlwBFMR0ycFdfnX7HhvA/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <!--imported contact google-form from  google-forms-->
         </div>
         <!--social-network buttons imported from fontawesome-->
         <ul>
@@ -175,7 +174,7 @@
           <li><a href="https://www.instagram.com/emiljoephotography" class="fab fa-instagram"></a></li>
           <li>
             <!--for the navigation icon/bottom to top-->
-            <div class="botnav"><a href="#home" class="fas fa-arrow-circle-up"></a></div>
+            <div class="bottom-navigation-bar"><a href="#home" class="fas fa-arrow-circle-up"></a></div>
           </li>
         </ul>
       </div>

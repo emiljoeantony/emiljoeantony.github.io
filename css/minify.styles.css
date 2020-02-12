@@ -1,3 +1,4 @@
+/*style used for custom scrollbar*/
 ::-webkit-scrollbar {
   width: 5px;
   background-color: black;
@@ -6,6 +7,7 @@
   background-color: tomato;
   border-radius: 25px;
 }
+/*style used for custom scrollbar for mozilla*/
 html {
   overflow-y: scroll;
   scrollbar-color: tomato black;
@@ -13,6 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Style inside the body */
 body {
   width: 100%;
   margin: 0;
@@ -20,12 +23,11 @@ body {
   background-size: cover;
   background-color: black;
 }
-
-.flex {
+.custom-flex-container {
   display: flex;
   flex-wrap: wrap;
 }
-.box {
+.home-page {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -35,32 +37,33 @@ body {
   padding: 80px;
   width: 100vw;
 }
-.box-img {
+/* style used for the heroimage onto right of herotext*/
+.hero-image {
   border-radius: 50%;
   max-width: 80vw;
 }
+/*Herotext on the homepage*/
 .heroText {
   width: 80vw;
   font-size: calc(80px + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 2px;
 }
-.box h6 {
+/*designation text on the homepage*/
+.home-page h6 {
   font-size: calc(30px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 3px;
   color: tomato;
 }
-.box p {
-  text-align: center;
-}
-.topNavigation {
+/*Style for navigation bar*/
+.top-navigation-bar {
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 50px;
 }
-
-.topNavigation a {
+/* Style the links inside the navigation bar */
+.top-navigation-bar a {
   color: #f2f2f2;
   text-align: center;
   margin-right: 20px;
@@ -70,29 +73,32 @@ body {
   font-size: calc(40px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Century Gothic', sans-serif;
 }
-
-.topNavigation a:hover {
+/* Change the color of links on hover */
+.top-navigation-bar a:hover {
   background-color: tomato;
   color: black;
 }
-
-.topNavigation a.active {
+/* Add a color to the active/current link */
+.top-navigation-bar a.active {
   font: color black;
 }
-.row.workHead {
+/*heading and the dividing line arrangement*/
+.custom-row-container.workHead {
   justify-content: space-between;
   align-items: center;
 }
-.row.gallerySplit {
+/*gallery images split into two rows with direction*/
+.custom-row-container.gallerySplit {
   flex-direction: column;
 }
-
+/*style of the works page*/
 .works {
   height: 100%;
   flex: 70%;
   width: 100vw;
   padding: 80px;
 }
+/*style of the works page title*/
 .works h2 {
   color: white;
   font-size: 60px;
@@ -100,29 +106,34 @@ body {
   font-weight: 100;
   font-family: 'Century Gothic', sans-serif;
 }
-.line {
+/*style of the lines dividing the pages*/
+.page-divider-line{
   background-color: tomato;
   width: 99%;
   height: 2px;
   align-self: center;
 }
-.column {
-  float: left;
+/*styles for the gallery*/
+.custom-column-container {
+  float: left; /*property is used for positioning and formatting content*/
   width: 100%;
   padding: 5px;
 }
 
-.row {
+/*The display property specifies the display behavior of the gallery/images row */
+.custom-row-container {
   display: flex;
 }
+/*styles inside the gallery/images column*/
 
 .saturate {
   filter: grayscale(100%);
 }
+/* to display the images in full color*/
 .saturate:hover {
   filter: grayscale(0%);
 }
-
+/* to display the images title on hover*/
 .overlay {
   color: #f1f1f1;
   width: 100%;
@@ -133,13 +144,16 @@ body {
   text-align: center;
   font-family: 'Century Gothic', sans-serif;
 }
-.column:hover .overlay {
+
+.custom-column-container:hover .overlay {
   opacity: 1;
 }
-.row.aboutHead {
+
+.custom-row-container.aboutHead {
   justify-content: space-between;
   align-items: center;
 }
+/* styles for about page*/
 .about {
   flex: 70%;
   height: 100%;
@@ -148,60 +162,71 @@ body {
   color: white;
   font-family: 'Century Gothic', sans-serif;
 }
+/* styles for about page title*/
 .about h2 {
   font-size: 60px;
   letter-spacing: 4px;
   font-weight: 100;
 }
+/* styles for about page text content*/
 .about p {
   text-align: left;
   letter-spacing: 0.5px;
   font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 100;
 }
+/* styles for about page's timeline text content*/
 .timeline {
   padding: 20px;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   justify-content: space-between;
 }
-.timeline.column {
+/* styles for about page timelines column size*/
+.timeline.custom-column-container {
   width: 50%;
 }
-.row.timelineSplit {
+/* styles for about page's timelines columns space alignment*/
+.custom-row-container.timelineSplit {
   justify-content: space-evenly;
 }
-#t1 {
+/* to give border to the timeline*/
+#timeline-divider {
   border-right: 1px solid tomato;
 }
-#marg {
+/*margin for the timelines*/
+#margin-timeline-1 {
   margin-left: 20px;
   margin-top: 140px;
 }
-#marg2 {
+#margin-timeline-2 {
   margin-left: 20px;
   margin-top: 160px;
 }
-#drop {
+#margin-timeline-top {
   margin-top: 120px;
 }
-.row.contactHead {
+
+/* alignment and positioning of title of contact page and the dividing line*/
+.custom-row-container.contactHead {
   justify-content: space-between;
   align-items: center;
 }
+/*styles for the contact page*/
 .contact {
   flex: 70%;
   height: 100%;
   width: 100vw;
   padding: 80px;
-
   color: white;
   font-family: 'Century Gothic', sans-serif;
 }
+/*styles for the contact page title*/
 .contact h2 {
   font-size: 60px;
   letter-spacing: 4px;
   font-weight: 100;
 }
+/*styles for the contact page text content*/
 .contact p {
   text-align: left;
   letter-spacing: 0.5px;
@@ -209,12 +234,14 @@ body {
   font-weight: 50;
   width: 100%;
 }
-
-#form {
+/* styles for the google form*/
+#google-form {
   filter: invert(100%);
 }
+/* styles for the google form ends here*/
 
-.row.contactSplit {
+/* styles for the fontawesome icons for social-networking*/
+.custom-row-container.contactSplit {
   justify-content: space-between;
 }
 .contact li {
@@ -229,23 +256,31 @@ body {
 .contact li a:hover {
   color: tomato;
 }
+/* styles for the fontawesome icons for social-networking ends here*/
 
-.contact .botnav a {
+/* styles for the bottom navigation icon*/
+.contact .bottom-navigation-bar a {
   float: right;
   color: white;
   font-size: 40px;
   text-decoration: none;
   margin-top: 15vw;
 }
-.botnav a:hover {
+.bottom-navigation-bar a:hover {
   color: tomato;
 }
-.naviDots {
+.side-navigation-bar {
   display: none;
 }
-
+/* styles for the bottom navigation icon ends here*/
+/*mobile screens*/
+@media only screen and (max-width: 680px) {
+}
+@media only screen and (min-width: 680px) {
+}
+/*tablet and pc*/
 @media only screen and (min-width: 992px) {
-  .naviDots {
+  .side-navigation-bar {
     display: block;
     /* position: sticky;
     position: -webkit-sticky; */
@@ -259,43 +294,40 @@ body {
     float: right;
     margin-right: 15px;
   }
-  .naviDots li {
+  .side-navigation-bar li {
     margin-top: 10px;
     margin-bottom: 10px;
     list-style: none;
   }
-
-  .naviDots a {
+  .side-navigation-bar a {
     color: white;
     font-size: 15px;
     text-decoration: none;
     opacity: 0.5;
   }
-  .naviDots a:hover {
+  .side-navigation-bar a:hover {
     color: tomato;
     opacity: 1;
   }
-
-  .topNavigation {
+  .top-navigation-bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 50px;
     margin-right: 80px;
   }
-  .topNavigation a {
+  .top-navigation-bar a {
     font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   }
-
-  .column {
+  .custom-column-container {
     float: left;
     width: 33.3%;
     padding: 5px;
   }
-  .row.gallerySplit {
+  .custom-row-container.gallerySplit {
     flex-direction: row;
   }
-  .box {
+  .home-page {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -317,7 +349,7 @@ body {
     padding: 60px;
     padding-top: 20px;
   }
-  .box-img {
+  .hero-image {
     border-radius: 50%;
     width: 45%;
     height: 45%;
@@ -335,4 +367,8 @@ body {
   .contact p {
     font-size: calc(15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)));
   }
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1600px) {
 }

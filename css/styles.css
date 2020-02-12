@@ -23,11 +23,11 @@ body {
   background-size: cover;
   background-color: black;
 }
-.flex {
+.custom-flex-container {
   display: flex;
   flex-wrap: wrap;
 }
-.box {
+.home-page {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -38,7 +38,7 @@ body {
   width: 100vw;
 }
 /* style used for the heroimage onto right of herotext*/
-.box-img {
+.hero-image {
   border-radius: 50%;
   max-width: 80vw;
 }
@@ -49,13 +49,13 @@ body {
   letter-spacing: 2px;
 }
 /*designation text on the homepage*/
-.box h6 {
+.home-page h6 {
   font-size: calc(30px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 3px;
   color: tomato;
 }
 /*Style for navigation bar*/
-.topNavigation {
+.top-navigation-bar {
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -63,7 +63,7 @@ body {
   margin-top: 50px;
 }
 /* Style the links inside the navigation bar */
-.topNavigation a {
+.top-navigation-bar a {
   color: #f2f2f2;
   text-align: center;
   margin-right: 20px;
@@ -74,21 +74,21 @@ body {
   font-family: 'Century Gothic', sans-serif;
 }
 /* Change the color of links on hover */
-.topNavigation a:hover {
+.top-navigation-bar a:hover {
   background-color: tomato;
   color: black;
 }
 /* Add a color to the active/current link */
-.topNavigation a.active {
+.top-navigation-bar a.active {
   font: color black;
 }
 /*heading and the dividing line arrangement*/
-.row.workHead {
+.custom-row-container.workHead {
   justify-content: space-between;
   align-items: center;
 }
 /*gallery images split into two rows with direction*/
-.row.gallerySplit {
+.custom-row-container.gallerySplit {
   flex-direction: column;
 }
 /*style of the works page*/
@@ -107,21 +107,21 @@ body {
   font-family: 'Century Gothic', sans-serif;
 }
 /*style of the lines dividing the pages*/
-.line {
+.page-divider-line{
   background-color: tomato;
   width: 99%;
   height: 2px;
   align-self: center;
 }
 /*styles for the gallery*/
-.column {
+.custom-column-container {
   float: left; /*property is used for positioning and formatting content*/
   width: 100%;
   padding: 5px;
 }
 
 /*The display property specifies the display behavior of the gallery/images row */
-.row {
+.custom-row-container {
   display: flex;
 }
 /*styles inside the gallery/images column*/
@@ -145,11 +145,11 @@ body {
   font-family: 'Century Gothic', sans-serif;
 }
 
-.column:hover .overlay {
+.custom-column-container:hover .overlay {
   opacity: 1;
 }
 
-.row.aboutHead {
+.custom-row-container.aboutHead {
   justify-content: space-between;
   align-items: center;
 }
@@ -182,32 +182,32 @@ body {
   justify-content: space-between;
 }
 /* styles for about page timelines column size*/
-.timeline.column {
+.timeline.custom-column-container {
   width: 50%;
 }
 /* styles for about page's timelines columns space alignment*/
-.row.timelineSplit {
+.custom-row-container.timelineSplit {
   justify-content: space-evenly;
 }
 /* to give border to the timeline*/
-#t1 {
+#timeline-divider {
   border-right: 1px solid tomato;
 }
 /*margin for the timelines*/
-#marg {
+#margin-timeline-1 {
   margin-left: 20px;
   margin-top: 140px;
 }
-#marg2 {
+#margin-timeline-2 {
   margin-left: 20px;
   margin-top: 160px;
 }
-#drop {
+#margin-timeline-top {
   margin-top: 120px;
 }
 
 /* alignment and positioning of title of contact page and the dividing line*/
-.row.contactHead {
+.custom-row-container.contactHead {
   justify-content: space-between;
   align-items: center;
 }
@@ -235,13 +235,13 @@ body {
   width: 100%;
 }
 /* styles for the google form*/
-#form {
+#google-form {
   filter: invert(100%);
 }
 /* styles for the google form ends here*/
 
 /* styles for the fontawesome icons for social-networking*/
-.row.contactSplit {
+.custom-row-container.contactSplit {
   justify-content: space-between;
 }
 .contact li {
@@ -259,17 +259,17 @@ body {
 /* styles for the fontawesome icons for social-networking ends here*/
 
 /* styles for the bottom navigation icon*/
-.contact .botnav a {
+.contact .bottom-navigation-bar a {
   float: right;
   color: white;
   font-size: 40px;
   text-decoration: none;
   margin-top: 15vw;
 }
-.botnav a:hover {
+.bottom-navigation-bar a:hover {
   color: tomato;
 }
-.naviDots {
+.side-navigation-bar {
   display: none;
 }
 /* styles for the bottom navigation icon ends here*/
@@ -280,7 +280,7 @@ body {
 }
 /*tablet and pc*/
 @media only screen and (min-width: 992px) {
-  .naviDots {
+  .side-navigation-bar {
     display: block;
     /* position: sticky;
     position: -webkit-sticky; */
@@ -294,40 +294,40 @@ body {
     float: right;
     margin-right: 15px;
   }
-  .naviDots li {
+  .side-navigation-bar li {
     margin-top: 10px;
     margin-bottom: 10px;
     list-style: none;
   }
-  .naviDots a {
+  .side-navigation-bar a {
     color: white;
     font-size: 15px;
     text-decoration: none;
     opacity: 0.5;
   }
-  .naviDots a:hover {
+  .side-navigation-bar a:hover {
     color: tomato;
     opacity: 1;
   }
-  .topNavigation {
+  .top-navigation-bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 50px;
     margin-right: 80px;
   }
-  .topNavigation a {
+  .top-navigation-bar a {
     font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   }
-  .column {
+  .custom-column-container {
     float: left;
     width: 33.3%;
     padding: 5px;
   }
-  .row.gallerySplit {
+  .custom-row-container.gallerySplit {
     flex-direction: row;
   }
-  .box {
+  .home-page {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -349,7 +349,7 @@ body {
     padding: 60px;
     padding-top: 20px;
   }
-  .box-img {
+  .hero-image {
     border-radius: 50%;
     width: 45%;
     height: 45%;
