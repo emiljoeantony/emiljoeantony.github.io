@@ -1,3 +1,4 @@
+/*style used for custom scrollbar*/
 ::-webkit-scrollbar {
   width: 5px;
   background-color: black;
@@ -6,13 +7,14 @@
   background-color: tomato;
   border-radius: 25px;
 }
-html{
+/*style used for custom scrollbar for mozilla*/
+html {
   overflow-y: scroll;
-  scrollbar-color:  tomato black;
+  scrollbar-color: tomato black;
   scrollbar-width: thin;
   scroll-behavior: smooth;
-
 }
+
 /* Style inside the body */
 body {
   width: 100%;
@@ -21,7 +23,6 @@ body {
   background-size: cover;
   background-color: black;
 }
-
 .flex {
   display: flex;
   flex-wrap: wrap;
@@ -36,23 +37,24 @@ body {
   padding: 80px;
   width: 100vw;
 }
+/* style used for the heroimage onto right of herotext*/
 .box-img {
   border-radius: 50%;
   max-width: 80vw;
 }
+/*Herotext on the homepage*/
 .heroText {
   width: 80vw;
   font-size: calc(80px + (100 - 80) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 2px;
 }
+/*designation text on the homepage*/
 .box h6 {
   font-size: calc(30px + (30 - 14) * ((100vw - 300px) / (1600 - 300)));
   letter-spacing: 3px;
   color: tomato;
 }
-.box p {
-  text-align: center;
-}
+/*Style for navigation bar*/
 .topNavigation {
   width: 100vw;
   display: flex;
@@ -80,20 +82,23 @@ body {
 .topNavigation a.active {
   font: color black;
 }
+/*heading and the dividing line arrangement*/
 .row.workHead {
   justify-content: space-between;
   align-items: center;
 }
+/*gallery images split into two rows with direction*/
 .row.gallerySplit {
   flex-direction: column;
 }
-
+/*style of the works page*/
 .works {
   height: 100%;
   flex: 70%;
   width: 100vw;
   padding: 80px;
 }
+/*style of the works page title*/
 .works h2 {
   color: white;
   font-size: 60px;
@@ -101,12 +106,14 @@ body {
   font-weight: 100;
   font-family: 'Century Gothic', sans-serif;
 }
+/*style of the lines dividing the pages*/
 .line {
   background-color: tomato;
   width: 99%;
   height: 2px;
   align-self: center;
 }
+/*styles for the gallery*/
 .column {
   float: left; /*property is used for positioning and formatting content*/
   width: 100%;
@@ -122,6 +129,7 @@ body {
 .saturate {
   filter: grayscale(100%);
 }
+/* to display the images in full color*/
 .saturate:hover {
   filter: grayscale(0%);
 }
@@ -136,13 +144,16 @@ body {
   text-align: center;
   font-family: 'Century Gothic', sans-serif;
 }
+
 .column:hover .overlay {
   opacity: 1;
 }
+
 .row.aboutHead {
   justify-content: space-between;
   align-items: center;
 }
+/* styles for about page*/
 .about {
   flex: 70%;
   height: 100%;
@@ -151,31 +162,38 @@ body {
   color: white;
   font-family: 'Century Gothic', sans-serif;
 }
+/* styles for about page title*/
 .about h2 {
   font-size: 60px;
   letter-spacing: 4px;
   font-weight: 100;
 }
+/* styles for about page text content*/
 .about p {
   text-align: left;
   letter-spacing: 0.5px;
   font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 100;
 }
+/* styles for about page's timeline text content*/
 .timeline {
   padding: 20px;
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   justify-content: space-between;
 }
+/* styles for about page timelines column size*/
 .timeline.column {
   width: 50%;
 }
+/* styles for about page's timelines columns space alignment*/
 .row.timelineSplit {
   justify-content: space-evenly;
 }
+/* to give border to the timeline*/
 #t1 {
   border-right: 1px solid tomato;
 }
+/*margin for the timelines*/
 #marg {
   margin-left: 20px;
   margin-top: 140px;
@@ -187,24 +205,28 @@ body {
 #drop {
   margin-top: 120px;
 }
+
+/* alignment and positioning of title of contact page and the dividing line*/
 .row.contactHead {
   justify-content: space-between;
   align-items: center;
 }
+/*styles for the contact page*/
 .contact {
   flex: 70%;
   height: 100%;
   width: 100vw;
   padding: 80px;
-
   color: white;
   font-family: 'Century Gothic', sans-serif;
 }
+/*styles for the contact page title*/
 .contact h2 {
   font-size: 60px;
   letter-spacing: 4px;
   font-weight: 100;
 }
+/*styles for the contact page text content*/
 .contact p {
   text-align: left;
   letter-spacing: 0.5px;
@@ -247,18 +269,14 @@ body {
 .botnav a:hover {
   color: tomato;
 }
-.naviDots{
-    display: none;
-  } 
+.naviDots {
+  display: none;
+}
 /* styles for the bottom navigation icon ends here*/
-
 /*mobile screens*/
-
 @media only screen and (max-width: 680px) {
-  
 }
 @media only screen and (min-width: 680px) {
-  
 }
 /*tablet and pc*/
 @media only screen and (min-width: 992px) {
@@ -275,15 +293,13 @@ body {
     justify-content: center;
     float: right;
     margin-right: 15px;
-    
   }
   .naviDots li {
     margin-top: 10px;
     margin-bottom: 10px;
     list-style: none;
   }
-
-  .naviDots a {  
+  .naviDots a {
     color: white;
     font-size: 15px;
     text-decoration: none;
@@ -293,10 +309,6 @@ body {
     color: tomato;
     opacity: 1;
   }
- 
-  
-
-  
   .topNavigation {
     display: flex;
     flex-direction: row;
@@ -307,7 +319,6 @@ body {
   .topNavigation a {
     font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
   }
-  /*property is used for positioning and formatting content*/
   .column {
     float: left;
     width: 33.3%;

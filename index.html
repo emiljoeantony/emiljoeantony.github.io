@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head><!--metadata-->
-    <!--custom style sheet-->
-    <link rel="stylesheet" href="css/minify.styles.min.css"/>  
-    <!--favicon-->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <meta name="theme-color" content="black">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <script type="text/javascript" src="js/fontAwesome.js">
-    </script>
-    </head>
-    <!--title-->
-    <title>Personal Profile WebSite</title>
-
-    <!--imported icons from fontawesome-->
-    
-  <body>
-    <div class="naviDots">
-      <ul>
-        <li ><a href="#home" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
-        <li><a href="#Work" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
-        <li ><a href="#About" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
-        <li ><a href="#Contact" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
-      </ul>
+<head>
+  <!--custom style sheet-->
+  <link rel="stylesheet" href="css/minify.styles.min.css" />
+  <!--favicon-->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <!--to change the status bar color of android phones to black-->
+  <meta name="theme-color" content="black">
+  <!--to change the status bar color of apple phones to black-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!--custom script to import fontawesome icons js used in the website that's stored locally-->
+  <script type="text/javascript" src="js/fontAwesome.js">
+  </script>
+  <!--title for the website-->
+  <title>Personal Profile WebSite</title>
+</head>
+<body>
+  <!--used for page navigation slider on the right side of the page-->
+  <div class="naviDots">
+    <ul>
+      <li><a href="#home" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
+      <li><a href="#Work" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
+      <li><a href="#About" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
+      <li><a href="#Contact" class="fa fa-dot-circle-o" aria-hidden="true"></a></li>
+    </ul>
+  </div>
+  <!--home section starts here, with a class name flex-->
+  <div id="home" class="flex">
+    <!--class topNavigation for the navigation menu on top of the website-->
+    <div class="topNavigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#Work">Works</a>
+      <a href="#About">About</a>
+      <a href="#Contact">Contact</a>
     </div>
-    <!--home section starts here, with a class name flex-->
-    <div id="home" class="flex">
-      <div class="topNavigation">
-        <a class="active" href="#home">Home</a>
-        <a href="#Work">Works</a>
-        <a href="#About">About</a>
-        <a href="#Contact">Contact</a>
-      </div>
-      <!--class box contains the profile picture with the class name box-image and herotext-->
-      <div class="box">
+    <!--class box contains the profile picture with the class name box-image and herotext-->
+    <div class="box">
+      <div>
         <div>
-          <div>
-            <img src="images/mi.jpg" alt="profilepicture" class="box-img" />
-          </div>
-          <div>
-            <h1 class="heroText"> Bring your brand to life with my help...</h1>
-          </div>
-          <div>
-            <h6>Product Developer</h6>
-          </div>
+          <img src="images/mi.jpg" alt="profilepicture" class="box-img" />
+        </div>
+        <div>
+          <h1 class="heroText"> Bring your brand to life with my help...</h1>
+        </div>
+        <div>
+          <h6>Product Developer</h6>
         </div>
       </div>
-      <!--home section ends here-->
-      <!--works section starts here, with a class name of works and an id name of work-->
-      <div id="Work" class="works">
+    </div>
+    <!--home section ends here-->
+    <!--works section starts here, with a class name of works and an id name of work-->
+    <div id="Work" class="works">
       <!--this class row contains the title and the dividing line-->
-        <div class="row workHead">
-          <div class="column"><h2 >Works</h2></div>
-          <div class="column"><div class="line"></div></div>
+      <div class="row workHead">
+        <div class="column">
+          <h2>Works</h2>
         </div>
+        <div class="column">
+          <div class="line"></div>
+        </div>
+      </div>
 
-        <!--this class row contains the the first row of images-->
-        <div class="row gallerySplit">
-          <div class="column">
-            <img src="images/mita.jpg" alt="exterior" style="width:100%" class="saturate">
-            <!--class overlay is used to display the title of the image when hovered upon the image-->
-            <div
-              class="overlay"
-              >Mita Residence</div
-            >
-          </div>
-          <div class="column">
-            <img src="images/anu.jpg" alt="interior" style="width:100%" class="saturate"><div
-              class="overlay"
-              >Anuradha Residence</div
-            >
-          </div>
-          <div class="column">
-            <img
-              src="images/jacuzzi2.jpg"
-              alt="interior"
-              style="width:100%" class="saturate"
-            ><div class="overlay">Sam Residence</div>
-          </div> 
+      <!--this class row contains the the first row of images-->
+      <div class="row gallerySplit">
+        <div class="column">
+          <img src="images/mita.jpg" alt="exterior" style="width:100%" class="saturate">
+          <!--class overlay is used to display the title of the image when hovered upon the image-->
+          <div class="overlay">Mita Residence</div>
         </div>
-        <!--first row of images ends here-->
-        <!--this class row contains the  second row of images-->
-        <div class="row gallerySplit"><div class="column">
+        <div class="column">
+          <img src="images/anu.jpg" alt="interior" style="width:100%" class="saturate">
+          <div class="overlay">Anuradha Residence</div>
+        </div>
+        <div class="column">
+          <img src="images/jacuzzi2.jpg" alt="interior" style="width:100%" class="saturate">
+          <div class="overlay">Sam Residence</div>
+        </div>
+      </div>
+      <!--first row of images ends here-->
+      <!--this class row contains the  second row of images-->
+      <div class="row gallerySplit">
+        <div class="column">
           <img src="images/jacuzzi1.jpg" alt="interior" style="width:100%" class="saturate">
           <div class="overlay">Sam Residence</div>
         </div>
@@ -90,106 +89,97 @@
           <img src="images/Home theatre 2.jpg" alt="interior" style="width:100%" class="saturate">
           <div class="overlay">Sam Residence</div>
         </div>
-      <div class="column">
-        <img src="images/Master BR toilet view 1.jpg" alt="interior" style="width:100%" class="saturate">
-        <div class="overlay">Sam Residence</div>
-      </div></div>
-        <!--second row of images ends here-->
-      </div>
-
-
-<!--About section starts here-->
-      <div id="About" class="about">
-        <!--this class row contains the title and the dividing line-->
-        <div class="row aboutHead">
-          <div class="column">
-            <h2>About</h2>
-          </div>
-          <div class="column">
-            <div class="line"></div>
-          </div>
+        <div class="column">
+          <img src="images/Master BR toilet view 1.jpg" alt="interior" style="width:100%" class="saturate">
+          <div class="overlay">Sam Residence</div>
         </div>
-        <!--class row containing the title and the dividing line ends here-->
-        <p
-          >I'm Emil Joe Antony, a 26y/o developer freshly graduated from the web development department of Makers.studio.
-           As a developer, I try to trigger emotions through digital interfaces using code. I also like Photography, Music and Gaming...
-        </p>
-        <!--timeline starts here-->
-        <div class="timeline">
-          <div class="row timelineSplit">
-            <!--separate id given inorder to give a margin for timeline entry-->
-            <div id="t1" class="column">
-              <h2>2020</h2>
-              <p>Started working as a product developer in Makers.Studio.</p>
-              <div id="drop">
-                <h2>2013</h2>
-                <p>Started specializing in 3d modeling and animation at Infopark,Koratty.</p>
-              </div>
-              
-              </div>
-            <div class="column">
-              <div id="marg"><h2>2014</h2>
+      </div>
+      <!--second row of images ends here-->
+    </div>
+
+
+    <!--About section starts here-->
+    <div id="About" class="about">
+      <!--this class row contains the title and the dividing line-->
+      <div class="row aboutHead">
+        <div class="column">
+          <h2>About</h2>
+        </div>
+        <div class="column">
+          <div class="line"></div>
+        </div>
+      </div>
+      <!--class row containing the title and the dividing line ends here-->
+      <p>I'm Emil Joe Antony, a 26y/o developer freshly graduated from the web development department of Makers.studio.
+        As a developer, I try to trigger emotions through digital interfaces using code. I also like Photography, Music
+        and Gaming...
+      </p>
+      <!--timeline starts here-->
+      <div class="timeline">
+        <div class="row timelineSplit">
+          <!--separate id given inorder to give a margin for timeline entry-->
+          <div id="t1" class="column">
+            <h2>2020</h2>
+            <p>Started working as a product developer in Makers.Studio.</p>
+            <div id="drop">
+              <h2>2013</h2>
+              <p>Started specializing in 3d modeling and animation at Infopark,Koratty.</p>
+            </div>
+
+          </div>
+          <div class="column">
+            <div id="marg">
+              <h2>2014</h2>
               <p>
                 Started working as a 3D Generalist in DesignQube.
-              </p></div>
-              <div id="marg2">
-                <h2>2011</h2>
-                <p>
-                  Started Diploma in Multimedia And Animation at School Of Multimedia And Animation,Thrissur.
-                </p>
-              </div>
+              </p>
             </div>
-          </div> 
+            <div id="marg2">
+              <h2>2011</h2>
+              <p>
+                Started Diploma in Multimedia And Animation at School Of Multimedia And Animation,Thrissur.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-         <!--contact section starts here-->
-      <div id="Contact" class="contact">
-        <!--this class row contains the title and the dividing line-->
-        <div class="row contactHead">
-          <div class="column">
-            <h2>Contact</h2>
-          </div>
-          <div class="column">
-            <div class="line"></div>
-          </div>
-        
-        <!--class row containing the title and the dividing line ends here--></div>
-        
-        <p>
-          Do you have a project or an idea in your mind that you want to
-          develop and need help?? Discover my projects on my social networks and
-          feel free to contact me!!
-        </p>
-        <!--this row consists the contact form-->
-        <div class="row contactSplit">
-          <div class="column"><iframe title="GoogleForm" id="form"
-          src="https://docs.google.com/forms/d/e/1FAIpQLScDiQerROLDOx3IQC2W2BwPltZfP4NlwBFMR0ycFdfnX7HhvA/viewform?embedded=true"
-          width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe><!--imported contact form from google forms-->
+    </div>
+    <!--contact section starts here-->
+    <div id="Contact" class="contact">
+      <!--this class row contains the title and the dividing line-->
+      <div class="row contactHead">
+        <div class="column">
+          <h2>Contact</h2>
+        </div>
+        <div class="column">
+          <div class="line"></div>
+        </div>
+        <!--class row containing the title and the dividing line ends here-->
+      </div>
+      <p>
+        Do you have a project or an idea in your mind that you want to
+        develop and need help?? Discover my projects on my social networks and
+        feel free to contact me!!
+      </p>
+      <!--this row consists the contact form-->
+      <div class="row contactSplit">
+        <div class="column"><iframe title="GoogleForm" id="form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScDiQerROLDOx3IQC2W2BwPltZfP4NlwBFMR0ycFdfnX7HhvA/viewform?embedded=true"
+            width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <!--imported contact form from google forms-->
         </div>
         <!--social-network buttons imported from fontawesome-->
         <ul>
-          <li
-            ><a
-              href="https://www.facebook.com/emil.joeantony"
-              class="fab fa-facebook-square"
-            ></a
-          ></li>
-          <li
-            ><a
-              href="https://www.behance.net/emiljoe"
-              class="fab fa-behance-square"
-            ></a
-          ></li>
-          <li
-            ><a
-              href="https://www.instagram.com/emiljoephotography"
-              class="fab fa-instagram"
-            ></a
-          ></li>
-          <li><!--for the navigation icon/bottom to top-->
-          <div class="botnav"><a href="#home" class="fas fa-arrow-circle-up"></a></div></li>
-        </ul> 
+          <li><a href="https://www.facebook.com/emil.joeantony" class="fab fa-facebook-square"></a></li>
+          <li><a href="https://www.behance.net/emiljoe" class="fab fa-behance-square"></a></li>
+          <li><a href="https://www.instagram.com/emiljoephotography" class="fab fa-instagram"></a></li>
+          <li>
+            <!--for the navigation icon/bottom to top-->
+            <div class="botnav"><a href="#home" class="fas fa-arrow-circle-up"></a></div>
+          </li>
+        </ul>
       </div>
     </div>
-  </body>
+</body>
+
 </html>
