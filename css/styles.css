@@ -80,9 +80,9 @@ body {
   color: black;
 }
 /* Add a color to the active/current hyperlink */
-.top-navigation-bar a.active {
+/* .top-navigation-bar a.active {
   font: color black;
-}
+} */
 /*heading and the dividing line arrangement*/
 .custom-row-container.workHead {
   justify-content: space-between;
@@ -144,11 +144,9 @@ body {
   text-align: center;
   font-family: 'Century Gothic', sans-serif;
 }
-
 .custom-column-container:hover .overlay {
   opacity: 1;
 }
-
 .custom-row-container.aboutHead {
   justify-content: space-between;
   align-items: center;
@@ -163,7 +161,7 @@ body {
   font-family: 'Century Gothic', sans-serif;
 }
 /* styles for about page title*/
-.about h2 {
+ .about h2 {
   font-size: 60px;
   letter-spacing: 4px;
   font-weight: 100;
@@ -205,7 +203,6 @@ body {
 #margin-timeline-top {
   margin-top: 120px;
 }
-
 /* alignment and positioning of title of contact page and the dividing line*/
 .custom-row-container.contactHead {
   justify-content: space-between;
@@ -256,8 +253,6 @@ body {
 .contact li a:hover {
   color: tomato;
 }
-/* styles for the fontawesome icons for social-networking ends here*/
-
 /* styles for the bottom navigation icon*/
 .contact .bottom-navigation-bar a {
   float: right;
